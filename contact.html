@@ -7,9 +7,7 @@
 </head>
 <body>
     <header>
-        <!-- add <h1> for Contact Page -->
         <h1>Contact Page</h1>
-        <!-- add <nav> with links: Home, Blog, Contact -->
          <nav>
         <ul>
             <li>
@@ -26,27 +24,49 @@
     </header>
 
     <main>
-        <!--contact form -->
         <form action="#" method="post">
-            <!-- input type: name -->
-            <input type="text">
-            <!-- input type: email -->
-            <input type="email">
-            <!-- input type: phone (format) -->
-            <input type="phone(format)"/>
-            <!-- input type: birthday -->
-            <input type="birthday"/>
-            <!-- subject dropdown -->
+            <label for="user-name">Name:</label>
+            <input type="text"> <br>
+            <label for="email">Email:</label>
+            <input type="email"> <br>
+            <label for="phone">Phone:</label> 
+            <input type="tel"/> <br>
+            <label for="birthday">Brthday:</label> 
+            <input type="date"/> <br>
+            <label>Your Country :</label>
             <select id="country-select" name="country">
-            <!-- preferred contact method (radio buttons) -->
-            <!-- newsletter subscription char (checkbox) -->
-            <!-- message textarea -->
-            <!-- submit button -->
+            <option value="usa">United States</option>
+            <option value="can">Canada</option>
+            <option value="mex">Mexico</option>
+            <option value="uk">United Kingdom</option>
+            <option value="ph">Philippines</option>
+            </select>
+            
+            <input type="checkbox">
+            
+             <p>Preferred contact method:</p>
+            <div>
+            <input type="radio" id="contact-email" name="contact_method" value="email" required>
+            <label for="contact-email">Email</label>
+
+            <input type="radio" id="contact-phone" name="contact_method" value="phone">
+            <label for="contact-phone">Phone Call</label>
+  
+            </div>
+            
+            
+             <label for="message">Your Message </label>
+             <textarea></textarea>
+            
+            <div>
+                <button type="submit">Send</button>
+            </div>
         </form>
     </main>
 
     <footer>
-        <!-- add copyright notice thingy-->
+        <p>Kent Ivan B. Lubas, Codes. All Rights Reserved.</p>
+    
     </footer>
 </body>
 </html>
